@@ -1,0 +1,32 @@
+{
+    "name": "vue",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "serve": "vue-cli-service serve",
+        "build": "vue-cli-service build"
+    },
+    "dependencies": {
+        "core-js": "^3.1.2",
+        "vue": "^2.6.10",
+        "vue-class-component": "^7.0.2",
+        "vue-property-decorator": "^8.1.0",
+        "vue-router": "^3.0.6"
+    },
+    "devDependencies": {
+        "@vue/cli-plugin-babel": "^4.0.0",
+        "@vue/cli-plugin-router": "^4.0.0",
+        "@vue/cli-plugin-typescript": "^4.0.0",
+        "@vue/cli-service": "^4.0.0",
+        "husky": "^3.0.9",
+        "typescript": "~3.5.3",
+        "vue-template-compiler": "^2.6.10"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "npm test",
+            "pre-push": "npm test",
+            "...": "..."
+        }
+    }
+}
